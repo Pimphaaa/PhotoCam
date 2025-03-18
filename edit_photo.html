@@ -1,0 +1,29 @@
+<!-- edit_photo.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Photo</title>
+    <link rel="stylesheet" href="photo_booth.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Photo</h1>
+        <div class="edit-section">
+            <canvas id="photoStrip"></canvas>
+            <div class="edit-controls">
+                <button id="addText">Add Text</button>
+                <button id="save">Save Photo</button>
+            </div>
+            <div class="sticker-container">
+                <img src="img/camera.png" alt="Sticker 1" class="sticker" draggable="true" data-src="img/camera.png">
+                <img src="img/flower.png" alt="Sticker 2" class="sticker" draggable="true" data-src="img/flower.png">
+                <img src="img/rabbit.png" alt="Sticker 3" class="sticker" draggable="true" data-src="img/rabbit.png">
+            </div>
+        </div>
+    </div>
+    
+    <script src="edit_photo.js"></script>
+</body>
+</html>

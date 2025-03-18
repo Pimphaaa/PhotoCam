@@ -1,0 +1,73 @@
+/* photo_booth.css */
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f0f5; /* สีพื้นหลังพาสเทล */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff7eb9; /* สีชมพูพาสเทล */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.edit-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#photoStrip {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ff7eb9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 126, 185, 0.2);
+    background-color: white;
+}
+
+.edit-controls {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #7ec8ff; /* สีฟ้าพาสเทล */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5aa9e6; /* สีฟ้าเข้มขึ้นเมื่อ hover */
+}
+
+.sticker-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.sticker {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.sticker:hover {
+    transform: scale(1.1);
+}

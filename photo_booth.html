@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Booth</title>
+    <link rel="stylesheet" href="photo_booth.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Booth</h1>
+        <div class="camera-section">
+            <video id="video" autoplay></video>
+            <div id="countdown" class="countdown"></div>
+            <div class="controls">
+                <button id="capture">Take Photo</button>
+                <button id="retakeAll" disabled>Retake All</button>
+            </div>
+        </div>
+        <div id="gallery">
+            <div class="photo-container">
+                <canvas id="canvas1"></canvas>
+                <button class="delete-btn" data-index="0">Delete</button>
+            </div>
+            <div class="photo-container">
+                <canvas id="canvas2"></canvas>
+                <button class="delete-btn" data-index="1">Delete</button>
+            </div>
+            <div class="photo-container">
+                <canvas id="canvas3"></canvas>
+                <button class="delete-btn" data-index="2">Delete</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="photo_booth.js"></script>
+</body>
+</html>
